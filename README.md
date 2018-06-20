@@ -31,3 +31,5 @@ webpack -v
 - [前端模块化规范](https://github.com/liangfengbo/learning-webpack/blob/master/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E8%A7%84%E8%8C%83.md)
 
 - [webpack核心概念](https://github.com/liangfengbo/learning-webpack/blob/master/webpack%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5.md)
+
+- [使用webpack打包三个方式](https://github.com/liangfengbo/learning-webpack/blob/master/webpack%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5.md)
