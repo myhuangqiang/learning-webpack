@@ -32,6 +32,6 @@ webpack -v
 
 - [webpack核心概念](https://github.com/liangfengbo/learning-webpack/blob/master/webpack%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5.md)
 
-- [使用webpack打包三个方式](https://github.com/liangfengbo/learning-webpack/tree/master/webpack%E6%89%93%E5%8C%85%E6%96%B9%E5%BC%8F)
+- [使用webpack打包三个方式](https://github.com/liangfengbo/learning-webpack/tree/master/use-webpack)
 
 - [使用webpack编译ES6](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-es6)
