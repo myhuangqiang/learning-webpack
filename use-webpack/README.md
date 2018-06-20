@@ -18,9 +18,7 @@ webpack告诉我们，用webpack进行打包有三种方法：
 3.webpack --config 你自定义的文件名字<webpack-default.js>
 ```
 
-#### 示例：
-
-新建一个目录，新建一个sum.js文件，这个文件主要是用es6 module暴露一个加法函数方法：
+### 新建一个目录，新建一个sum.js文件，这个文件主要是用es6 module暴露一个加法函数方法：
 
 ```js
 // sum.js
@@ -29,7 +27,7 @@ export default function sum(a, b) {
 }
 ```
 
-然后新建一个app.js入口文件（webpack要打包这个文件）
+### 然后新建一个app.js入口文件（webpack要打包这个文件）
 
 ```js
 // app.js
@@ -41,13 +39,13 @@ import sum from './sum'
 console.log('sum(23,24) = ', sum(23, 24));
 ```
 
-下面进行打包：
+### 下面进行打包：
 
 ```
 webpack app.js -o bundle.js
 ```
 
-如果打包成功显示：
+### 如果打包成功显示：
 
 ```
 Hash: 7e137d767d2665688484
