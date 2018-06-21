@@ -35,3 +35,7 @@ webpack -v
 - [使用webpack打包三个方式](https://github.com/liangfengbo/learning-webpack/tree/master/use-webpack)
 
 - [使用webpack编译ES6](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-es6)
+
+- [使用webpack编译typescript](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-typescript)
+
+
