@@ -1,6 +1,8 @@
 ### 安装typescript-loader
 
 ```
+// 两个包随便选择安装一个，我选择安装第二个
+
 官方：npm install typescript ts-loader --save-dev
 
 开源作者：npm install typescript ts-loader awesome-typescript-loader --save-dev
@@ -90,12 +92,14 @@ npm install @types/lodash
 或
 npm install @types/vue
 
+反正你想使用什么库声明，可以去GitHub搜他们的声明文件包安装
 ```
 
 ```
+// 错误写法不能被打包：
 import * as _ from 'lodash'
 
-console.log(_.chunk([1, 2, 3, 4, 5], 2));
+console.log(_.chunk(2));
 ```
 
 
@@ -109,7 +113,7 @@ ERROR in /Users/bob/Documents/myproject/learning-webpack/webpack-typescript/src/
 提示报错，必须传一个数组对象
 
 ```js
-// 这样就会成功打包
+// 正确语法会成功打包：
 
 import * as _ from 'lodash'
 
@@ -130,7 +134,7 @@ typings install lodash --save
 安装成功后，有typings文件，和typings.json文件，那如何使用他们的声明文件呢？
 
 ```js
-// 在tsconfig.json文件下
+// 首先在tsconfig.json文件写入：
 "compilerOptions": {
     "module": "commonjs",
     "target": "es5",
@@ -143,7 +147,15 @@ typings install lodash --save
   },
 ```
 
-成功打包：
+语法正确的话会成功打包：
+
+```js
+// 正确语法会成功打包：
+
+import * as _ from 'lodash'
+
+console.log(_.chunk([1, 2, 3, 4, 5], 2));
+```
 
 ```
 ➜  webpack-typescript git:(master) ✗ webpack
