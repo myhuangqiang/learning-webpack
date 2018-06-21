@@ -26,7 +26,7 @@ cnpm install webpack -g
 webpack -v
 ```
 
-### 二、大纲
+### 二、学习目录
 
 - [前端模块化规范](https://github.com/liangfengbo/learning-webpack/blob/master/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%E8%A7%84%E8%8C%83.md)
 
@@ -37,5 +37,7 @@ webpack -v
 - [使用webpack编译ES6](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-es6)
 
 - [使用webpack编译typescript](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-typescript)
+
+- [使用webpack4打包提取公共代码](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-package-public-code)
 
 
