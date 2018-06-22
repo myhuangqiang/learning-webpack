@@ -23,7 +23,7 @@ module.exports = {
                             transform: './css.transform.js'
                         }
                     }, {
-                        loader: 'css-loader'
+                        loader: 'css-loader',
                     }
                 ],
                 exclude: /node_modules/,

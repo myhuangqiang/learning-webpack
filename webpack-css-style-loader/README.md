@@ -1,4 +1,4 @@
-### 处理css
+### webpack可以处理css是什么?
 
 ```
 引入css
@@ -7,7 +7,7 @@ css modules
 提出css代码
 ```
 
-### 引入css
+### 引入css处理方法
 
 - style-loader
     - style-loader
@@ -15,13 +15,13 @@ css modules
     - style-loader/useable
 - css-loader
 
-### 安装
+### 安装包
 
 ```js
 npm install style-loader css-loader file-loader --save-dev
 ```
 
-### style-loader配置
+### 使用style-loader配置
 
 将css-loader打包好的css代码以<style>标签的形式插入到html文件中。
 
@@ -44,7 +44,10 @@ module: {
 }
 ```
 
-### style-loader/url配置
+
+![css-loader](./css-loader.png)
+
+### 使用style-loader/url配置
 
 将css-loader打包好的css代码以<link>文件的形式插入到html文件中。
 
@@ -66,7 +69,10 @@ module: {
 }
 ```
 
-### style-loader/useable配置
+
+![css-loader-url](./css-loader-url.png)
+
+### 使用style-loader/useable配置
 将css-loader打包好的css代码以<link>文件的形式插入到html文件中。
 可以使用use或unuse使用css代码
 
@@ -90,7 +96,7 @@ module: {
 }
 ```
 
-使用：
+### 在app.js写入代码测试：
 
 ```
 import base from './css/base.css'
@@ -163,3 +169,5 @@ module.exports = function (css) {
     }
 }
 ```
+
+![css-loader-options](./css-loader-option.png)
