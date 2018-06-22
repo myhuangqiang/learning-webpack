@@ -1,13 +1,4 @@
-### webpack可以处理css什么?
-
-```
-引入css
-css modules
-配置less / sass
-提出css代码
-```
-
-### 引入css处理方法
+### webpack处理css的loader
 
 - style-loader
     - style-loader
@@ -15,16 +6,15 @@ css modules
     - style-loader/useable
 - css-loader
 
-### 安装包
+### webpack处理css只需要配置2步：
 
-```js
+##### 第一步：安装style-loader css-loader file-loader包：
+
+```
 npm install style-loader css-loader file-loader --save-dev
 ```
 
-### 使用style-loader配置
-
-将css-loader打包好的css代码以<style>标签的形式插入到html文件中。
-
+### 第二步：在webpack.config.js里面进行配置：
 
 ```
 module: {
@@ -44,6 +34,7 @@ module: {
 }
 ```
 
+将css-loader打包好的css代码以<style>标签的形式插入到html文件中。
 
 ![css-loader](./css-loader.png)
 
@@ -111,12 +102,13 @@ common.unuse();
 
 ### Style-Loader options配置
 
-options
+##### options（参数）
 - insertAt(插入位置)
-- insertInto(插入到dom)
+- insertInto(插入到dom哪个html标签上)
 - singleton(是否只使用一个style标签)
-- transform(转化，浏览器环境下，插入到页面前)
+- transform(异步获取css代码可以进行转化，在浏览器环境下，插入到页面前)
 
+示例：
 ```
 module: {
     rules: [
@@ -171,3 +163,17 @@ module.exports = function (css) {
 ```
 
 ![css-loader-options](./css-loader-option.png)
+
+### 总结：
+
+```
+1.使用style-loader, css-loader配置webpack进行css打包
+2.style-loader是打包后使用style插入到文档中
+3.style-loader/url是打包后使用link链接css文件到文档中
+4.style-loader/useable是打包后，开发者可用按需使用use()或不适应unuse()
+5.style-loader 有 options（参数）
+    - insertAt(插入位置)
+    - insertInto(插入到dom哪个html标签上)
+    - singleton(是否只使用一个style标签)
+    - transform(异步获取css代码可以进行转化，在浏览器环境下，插入到页面前)
+```

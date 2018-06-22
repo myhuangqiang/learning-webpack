@@ -49,7 +49,7 @@ Last login: Fri Jun 22 13:22:47 on ttys000
 
 - [webpack处理css-style-loader](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-style-loader)
 
-- [webpack处理css-css-loader](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-css-loader)
+- [webpack处理css-loader](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-css-loader)
 
 - [webpack处理css-配置less与sass](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-less-sass-loader)
 

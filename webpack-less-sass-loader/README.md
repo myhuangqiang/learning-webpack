@@ -1,20 +1,25 @@
-### 安装包
+
+配置支持less或sass只需要2步：
+
+### 首先安装包
+
+less
+```
+ npm install less less-loader --save-dev
+```
+
+sass
 
 ```
-// less
- npm install less less-loader --save-dev
-
-// sass
 npm install node-sass sass-loader --save-dev
+```
+另外要装style-loader css-loader
 
-// 另外要装style-loader css-loader
-
+```
 npm install style-loader css-loader --save-dev
 ```
 
-配置非常简单：
-
-在module的rules下：
+然后在webpack.config.js文件下，配置module的rules
 
 ### less配置：
 
@@ -54,7 +59,7 @@ module.exports = {
 }
 ```
 
-写一段less代码进行打包：
+新建一个less文件且写入less代码，和index.html文件引入测试：
 
 ```less
 @fontSize16: 16px;
@@ -69,6 +74,8 @@ module.exports = {
 ```
 
 ![image](./webpack-less.png)
+
+运行`index.html`打开测试成功显示样式
 
 ### sass配置
 
@@ -108,7 +115,7 @@ module.exports = {
 }
 ```
 
-写一段scss样式测试:
+新建一个scss文件且写入sass代码，和index.html文件引入测试：
 
 ```scss
 $fontSize16: 16px;
@@ -123,4 +130,6 @@ $bgColor: #fc1;
 ```
 ![webpack-sass](./webpack-sass.png)
 
-总结：如果配置less和sass，首先安装less-loader以后sass-loader的包，然后在rules下匹配文件后缀以及loader。
+### 总结：
+
+- 如果配置less和sass，首先安装less-loader以后sass-loader的包，然后在rules下匹配文件后缀以及配置对于的loader。

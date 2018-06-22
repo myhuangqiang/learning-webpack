@@ -1,16 +1,19 @@
-### 一、css-loader： options
+配置css-loader也有参数配置
+
+### 一、css-loader配置参数
+
  ```
  - alias 解析的别名
  - importLoader (@import)
- - Minimize 是否压缩
- - modules 是不是开启css模块化（启用css-modules）
+ - Minimize 是否进行css代码压缩
+ - modules 是不是开启css模块化（启用css-modules）开启后，可以引入其他css文件的代码
     - :local
     - :global
     - compose
     - compose ... from path
  ```
 
-### 二、开启压缩：minimize
+### 二、minimize:开启压缩
 
 css-loader可以有压缩的功能，开启minimize为true就可以了
 
@@ -160,3 +163,18 @@ module: {
 ![css-loader-modules3](css-loader-modules3.png)
 
 已经自动编译好配置规范的名字了！
+
+### 总结：
+
+配置css-loader时候，可以配置一些参数：
+
+ ```
+ - alias 解析的别名
+ - importLoader (@import)
+ - Minimize 是否进行css代码压缩
+ - modules 是不是开启css模块化（启用css-modules）开启后，可以引入其他css文件的代码
+    - :local
+    - :global
+    - compose
+    - compose ... from path
+ ```
