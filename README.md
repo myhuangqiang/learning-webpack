@@ -1,5 +1,5 @@
 # learning-webpack
-学习webpack，如果您有兴趣，我们一起学习。
+学习webpack4，如果您有兴趣，我们一起学习。
 
 ### 一、需要安装环境
 
@@ -24,6 +24,11 @@ cnpm install webpack -g
 
 ```
 webpack -v
+
+Last login: Fri Jun 22 13:22:47 on ttys000
+➜  ~ webpack -v
+4.5.0
+➜  ~
 ```
 
 ### 二、学习目录
