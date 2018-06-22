@@ -1,4 +1,5 @@
-### css-loader： options
+### 一、css-loader： options
+ ```
  - alias 解析的别名
  - importLoader (@import)
  - Minimize 是否压缩
@@ -7,9 +8,11 @@
     - :global
     - compose
     - compose ... from path
+ ```
 
+### 二、开启压缩：minimize
 
-### 开启压缩：minimize
+css-loader可以有压缩的功能，开启minimize为true就可以了
 
 新建了2个css文件，分别引入进行压缩
 
@@ -50,7 +53,9 @@ module: {
 代码已经被压缩到一行，没有空格回车了
 
 
-#### 模块化:
+#### 三、模块化:
+
+webpack进行打包时候，一般有多少个css文件，就会自动打包多少个文件，如果使用modules就会开启css模块化，可以从A文件引入使用B文件的样式
 
 ```js
 modules: true
@@ -112,7 +117,9 @@ module: {
 
 ![css-loader-modules2](./css-loader-modules2.png)
 
-### 编译打包样式名字规范
+### 四、编译打包样式名字规范
+
+webpack进行打包css样式时候，会自动转换成一串字符串，如果想对css的样式名字进行规范，可以使用localIdentName属性配置
 
 ```js
 localIdentName: '[path][name]_[local]_[hash:base64:5]'
@@ -151,3 +158,4 @@ module: {
 
 ![css-loader-modules3](css-loader-modules3.png)
 
+已经自动编译好配置规范的名字了！
