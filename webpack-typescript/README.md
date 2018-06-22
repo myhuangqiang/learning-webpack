@@ -1,4 +1,5 @@
-### 安装typescript-loader
+### 安装
+webpack配置支持typescript，需要安装typescript-loader
 
 ```
 // 两个包随便选择安装一个，我选择安装第二个
@@ -8,12 +9,15 @@
 开源作者：npm install typescript ts-loader awesome-typescript-loader --save-dev
 ```
 
-### 配置：tsconfig.json
+安装成功后，目录下会自动生成一个tsconfig.json文件：
+### 首先：配置tsconfig.json
 
-- compilerOptions 
+参数：
+- compilerOptions
 - include
 - exclude
 
+示例：
 ```js
 {
   "compilerOptions": {
@@ -34,8 +38,8 @@
 }
 ```
 
-
-### 配置：webpack.config.js
+新建一个webpack.config.js文件
+### 然后：配置webpack.config.js
 
 ```js
 module.exports = {
@@ -60,12 +64,12 @@ module.exports = {
 ```
 
 
-### 可以安装loadsh插件或库测试
+### 测试阶段：安装loadsh插件或其他库测试
 
 ```
 npm install loadsh --save
 ```
-打包测试：
+进行`webpack`命令成功打包测试：
 
 ```
 ➜  webpack-typescript git:(master) ✗ webpack
@@ -82,11 +86,13 @@ Entrypoint app = app.bundle.js
     + 1 hidden module
 ```
 
-### 使用声明文件：当你使用lodash，或vue的文件，可以使用他们的声明语法
+### 什么是声明文件？
 
-### 方法一:
+当我们使用vuejs开发，官方有vuejs的规范，或者你使使用其他库或框架，也有其他库的语法规范，那么我们如何是配置规范这些库或开源框架的规范呢，没错，就是使用它们的声明文件。
 
-举例：
+#### 声明文件，方法一：
+
+举例，我要配置lodash声明文件，和vuejs声明文件，就直接安装以下代码：
 ```
 npm install @types/lodash
 或
@@ -94,6 +100,8 @@ npm install @types/vue
 
 反正你想使用什么库声明，可以去GitHub搜他们的声明文件包安装
 ```
+
+好比，我现在安装完成了lodash的声明文件，我故意写错语法：不能进行打包
 
 ```
 // 错误写法不能被打包：
@@ -121,7 +129,7 @@ console.log(_.chunk([1, 2, 3, 4, 5], 2));
 ```
 
 
-### 方法二：
+#### 声明文件，方法二：
 
 先安装typings，再安装声明文件包（GitHub搜就有）:
 
@@ -133,12 +141,13 @@ typings install lodash --save
 
 安装成功后，有typings文件，和typings.json文件，那如何使用他们的声明文件呢？
 
+需要在tsconfig.json文件写入：
 ```js
-// 首先在tsconfig.json文件写入：
 "compilerOptions": {
     "module": "commonjs",
     "target": "es5",
     "allowJs": true,
+
     // 添加使用的库声明
     "typeRoots": [
       "./node_modules/@type",
@@ -171,4 +180,11 @@ Entrypoint app = app.bundle.js
 [./src/app.ts] 278 bytes {app} [built]
     + 1 hidden module
 ➜  webpack-typescript git:(master) ✗
+```
+
+### 总结：
+
+```
+1.安装typescript-loader，配置支持typescript
+2. 使用框架或库的声明文件，规范语法
 ```
