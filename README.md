@@ -40,4 +40,6 @@ webpack -v
 
 - [使用webpack4打包提取公共代码](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-package-public-code)
 
+- [使用webpack代码分割和懒加载](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-code-splitting-and-lazy-loading)
+
 
