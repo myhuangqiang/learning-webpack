@@ -38,6 +38,7 @@ module: {
                 }, {
                     loader: 'css-loader',
                     options: {
+                        // 开启压缩css
                         minimize: true,
                     }
                 }
@@ -53,7 +54,7 @@ module: {
 代码已经被压缩到一行，没有空格回车了
 
 
-#### 三、模块化:
+### 三、模块化:
 
 webpack进行打包时候，一般有多少个css文件，就会自动打包多少个文件，如果使用modules就会开启css模块化，可以从A文件引入使用B文件的样式
 

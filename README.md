@@ -46,4 +46,6 @@ webpack -v
 
 - [webpack处理css-css-loader](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-css-css-loader)
 
+- [webpack处理css-配置less与sass](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-css-less-sass-loader)
+
 
