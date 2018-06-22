@@ -12,7 +12,7 @@ module.exports = {
         path: path.resolve(__dirname, './dist'),
         publicPath: './dist/',
         filename: '[name].bundle.js',
-        chunkFilename: '[name].chunk.js'
+        chunkFilename: '[name].chunk.js',
     },
     plugins: [
         new webpack.optimize.SplitChunksPlugin({

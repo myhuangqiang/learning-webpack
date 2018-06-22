@@ -32,14 +32,16 @@ webpack -v
 
 - [webpack核心概念](https://github.com/liangfengbo/learning-webpack/blob/master/webpack%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5.md)
 
-- [使用webpack打包三个方式](https://github.com/liangfengbo/learning-webpack/tree/master/use-webpack)
+- [webpack打包三个方式](https://github.com/liangfengbo/learning-webpack/tree/master/use-webpack)
 
-- [使用webpack编译ES6](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-es6)
+- [webpack编译ES6](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-es6)
 
-- [使用webpack编译typescript](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-typescript)
+- [webpack编译typescript](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-typescript)
 
-- [使用webpack4打包提取公共代码](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-package-public-code)
+- [webpack4打包提取公共代码](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-package-public-code)
 
-- [使用webpack代码分割和懒加载](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-code-splitting-and-lazy-loading)
+- [webpack代码分割和懒加载](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-code-splitting-and-lazy-loading)
+
+- [webpack处理css-style-loader](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-css-style-loader)
 
 
