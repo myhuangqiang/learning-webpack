@@ -87,3 +87,4 @@ import(/* webpackChunkName:'subPageA' */'./subPageA').then(function (subPageA) {
 }
 export default 'pageA'
 ```
+![image](./webpack-code-splitting-and-lazy-loading.png)
