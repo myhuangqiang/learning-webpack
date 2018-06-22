@@ -44,4 +44,6 @@ webpack -v
 
 - [webpack处理css-style-loader](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-css-style-loader)
 
+- [webpack处理css-css-loader](https://github.com/liangfengbo/learning-webpack/tree/master/webpack-css-css-loader)
+
 

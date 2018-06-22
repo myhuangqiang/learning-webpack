@@ -1,0 +1,10 @@
+html {
+    background-color: #f8f8f8;
+    transition: 0.5s ease-in-out;
+}
+.box{
+    composes: big-box from './common.css';
+    height: 100px;
+    width: 100px;
+    background-color: #f00;
+}

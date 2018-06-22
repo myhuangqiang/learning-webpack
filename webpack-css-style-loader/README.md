@@ -1,4 +1,4 @@
-### webpack可以处理css是什么?
+### webpack可以处理css什么?
 
 ```
 引入css
