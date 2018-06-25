@@ -24,11 +24,11 @@ var ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 ### 使用插件局部配置
 ```js
 plugins: [
-        new ExtractTextWebpackPlugin({
-            filename: '[name].min.css',
-            allChunks: false,
-        })
-    ]
+    new ExtractTextWebpackPlugin({
+        filename: '[name].min.css',
+        allChunks: false,
+    })
+]
 ```
 
 ### 详细代码配置
@@ -70,7 +70,6 @@ module.exports = {
     plugins: [
         new ExtractTextWebpackPlugin({
             filename: '[name].min.css',
-            // 是否全局都进行提取
             allChunks: true,
         })
     ]
