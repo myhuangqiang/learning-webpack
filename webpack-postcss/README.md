@@ -3,6 +3,7 @@ PostCSS是一个利用JS插件来对CSS进行转换的工具
 
 ### 参数介绍
 
+```
 postcss
 
 postcss-loader
@@ -12,6 +13,7 @@ Autoprefixed 样式加前缀
 postcss-cssnano
 
 postcss-cssnext 可以编译一些未来的CSS样式
+```
 
 ### 安装
 
@@ -55,4 +57,4 @@ a {
 
 ### 打包结果
 
-![image](./css-postcss-test.pmg)
+![image](./css-postcss-test.png)
