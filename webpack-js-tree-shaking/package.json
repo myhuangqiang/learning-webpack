@@ -1,0 +1,19 @@
+{
+  "name": "webpack-js-tree-shaking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.12.1"
+  },
+  "dependencies": {
+    "uglifyjs-webpack-plugin": "^1.2.6"
+  }
+}
